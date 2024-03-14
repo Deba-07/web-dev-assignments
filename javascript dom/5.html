@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle image</title>
+</head>
+<body>
+    <h1></h1>
+    <button id="button">Toggle image</button>
+    <br>
+    <img src="https://learn.pwskills.com/_next/image?url=https%3A%2F%2Fcdn.pwskills.com%2Fassets%2Fuploads%2Fthumbnails%2F64215310af09d6aa495682f5.png&w=3840&q=75" alt="">
+    <script>
+        const mybutton = document.getElementById('button')
+        const heading = document.querySelector('h1')
+        const image = document.querySelector('img')
+        let imageVisible = true
+        mybutton.addEventListener('click', () =>{
+            imageVisible = !imageVisible
+            if(imageVisible){
+                heading.innerText = 'Your image is visible'
+                image.style.display = 'block'
+            }
+            else{
+                heading.innerText = 'Your image is hidden'
+                image.style.display = 'none'
+            }
+        })
+    </script>
+</body>
+</html>

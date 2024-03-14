@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail landing page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+        body{
+            font-family: "Open sans", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+        }
+        nav{
+            display: flex;
+            padding: 0px 25px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0px;
+        }
+        .logo-container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-container > img{
+            height: 30px;
+            width: 30px;
+        }
+        .logo-container > p{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .buttons{
+            display: flex;
+            gap: 50px;
+        }
+        .button-1{
+            border: 0;
+            font-size: 15px;
+            background-color: transparent;
+            font-weight: 300;
+            color: #1a73e8;
+        }
+        .button-2{
+            padding: 10px 20px;
+            background-color: transparent;
+            font-size: 15px;
+            font-weight: 300;
+            color: #1a73e8;
+            border: 0.5px solid #1f1f1f5e;
+            border-radius: 4px;
+        }
+        .button-3{
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            font-size: 15px;
+            font-weight: 300;
+            border: 0.5px solid #1f1f1f5e;
+            border-radius: 4px;
+            color: #fff;
+        }
+        hr{
+            border: 0.2px solid #1f1f1f5e;
+            margin-top: 0px;
+        }
+        .main-section{
+            display: flex;
+            justify-content: space-around;
+            gap: 100px;
+        }
+        .sub-section-1{
+            width: 40%;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sub-section-1 > h2{
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+        .sub-section-1 > p{
+            margin-bottom: 10px 0px;
+        }
+        .button-section{
+            display: flex;
+            margin-top: 30px;
+            gap: 50px;
+        }
+        .sub-section-2{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+        .sub-section-2 > img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-container">
+                <img src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="Gmail logo">
+                <p>Gmail</p>
+            </div>
+            <div class="buttons">
+                <button class="button-1">For work</button>
+                <button class="button-2">Sign in</button>
+                <button class="button-3">Create an account</button>
+            </div>
+        </nav>
+        <hr>
+        <section class="main-section">
+            <section class="sub-section-1">
+                
+                    <h2>Secure, smart, and easy to use email</h2>
+                    <p>Get more with Gmail.Now integrated with Google Chat, Google Meet, and more, all in one place</p>
+    
+                <section class="button-section">
+                    <button class="button-3">Create an account</button>
+                    <button class="button-1">For work</button>
+                </section>
+            </section>
+            <section class="sub-section-2">
+                <img src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880" alt="img">
+            </section>
+        </section>
+    </div>
+</body>
+</html>

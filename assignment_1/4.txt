@@ -1,0 +1,7 @@
+The three modules we have learnt in this module are 
+
+a. <p></p>, this defines a paragraph in HTML. In HTML it is the most commonly used block-level element and always starts from a new line.
+
+b. <h1></h1>, this efines as the heading tag in HTML. It is used to add title and subtiles in our web page. It possess the highest value of the content and considered as a block-level element in HTML.
+
+c.<div></div>, it defines as a section or division in HTML and is used as a container for HTML element. It is a inline element.

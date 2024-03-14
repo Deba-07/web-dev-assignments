@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card container</title>
+    <style>
+        body{
+            background-color: #a5cdf0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            color: #445deb;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle{
+            text-align: center;
+            margin-top: 0px;
+            font-size: 12px;
+            color: #575757;
+        }
+        .card{
+            max-width: 300px;
+            background-color: #fff;
+            border: 0;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        img{
+            width: 100%;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+            color: blueviolet;
+        }
+        .mentor{
+            font-size: 14px;
+            font-weight: lighter;
+        }
+        .price{
+            font-weight: bold;
+        }
+        .card_container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 100%;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Community Programs</h1>
+    <p class="subtitle">Open to all pro-live classes on Youtube for free</p>
+    <div class="card_container">
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.jpg" alt="course-1">
+            <p class="title">Masterclass Understing APIs in Web Development with Roadmap</p>
+            <p class="mentor">Hitesh Choudhary</p>
+            <p class="price">FREE</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6463025b6977cc64d3ddf8b7.jpg" alt="course-2">
+            <p class="title">Masterclass Cracking The Coding Interview LinkedList</p>
+            <p class="mentor">Vishwa Mohan</p>
+            <p class="price">FREE</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.jpg" alt="course-3">
+            <p class="title">Masterclass Important of DSA in Modern Programming</p>
+            <p class="mentor">Priya Bhatia</p>
+            <p class="price">FREE</p>
+        </div>
+    </div>
+</body>
+</html>

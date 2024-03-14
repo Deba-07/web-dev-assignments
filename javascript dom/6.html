@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down</title>
+    <style>
+        h1{
+            display: block;
+        }
+        select{
+            height: 20px;
+            position: relative;
+            top: 34px;
+        }
+        body{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Which is your favourite language:</h1>
+    <select id="dropdown"></select>
+    <script>
+        const arr = ['javascript', 'java', 'python', 'c++']
+        const dropdown = document.getElementById('dropdown')
+        arr.forEach(option =>{
+            const optionElement = document.createElement('option');
+            optionElement.text = option;
+            dropdown.add(optionElement);
+        });
+    </script>
+</body>
+</html>

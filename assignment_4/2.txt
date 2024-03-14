@@ -1,0 +1,4 @@
+An HTML entity is a piece of text ("string") that begins with an ampersand (&) and ends with a semicolon (;). Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces).
+     Examples:   &	(&amp;)	    Interpreted as the beginning of an entity or character reference.
+                 ©	(&copy;)	Interpreted as the copyright sign.
+                 ®	(&reg;)	    Interpreted as the registered sign.

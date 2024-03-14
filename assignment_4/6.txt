@@ -1,0 +1,9 @@
+Semantic HTML tags are tags that define the meaning of the content they contain. 
+
+For example, tags like <header>, <article>, and <footer> are semantic HTML tags. They clearly indicate the role of the content they contain. On the other hand, tags like<div> and <span> are typical examples of non-semantic HTML elements.
+
+<article>	    Defines independent, self-contained content
+<aside>	        Defines content aside from the page content
+<details>	    Defines additional details that the user can view or hide
+<figcaption>	Defines a caption for a <figure> element
+<nav>           element defines a set of navigation links.

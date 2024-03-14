@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .dropdown{
+            display: inline-block;
+            top: 10px;
+            position: relative;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd ;
+            max-height: 150px;
+            width: 200px;
+            overflow-y: scroll;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-option{
+            padding: 10px;
+            cursor: pointer;
+        }
+        .dropdown-option:hover{
+            background-color: #f1f1f1;
+        }
+        span{
+            background-color: #ff6666;
+            padding: 10px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <span>Hover to view options</span>
+        <div class="dropdown-content">
+            <div class="dropdown-option">Option 1</div>
+            <div class="dropdown-option">Option 2</div>
+            <div class="dropdown-option">Option 3</div>
+            <div class="dropdown-option">Option 4</div>
+            <div class="dropdown-option">Option 5</div>
+            <div class="dropdown-option">Option 6</div>
+            <div class="dropdown-option">Option 7</div>
+            <div class="dropdown-option">Option 8</div>
+            <div class="dropdown-option">Option 9</div>
+            <div class="dropdown-option">Option 10</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

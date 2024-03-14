@@ -1,0 +1,10 @@
+Features of HTML5:
+    
+    Semantic Elements.
+    Audio and Video Support.
+    Canvas Elements.
+    Geolocation API.
+    Local Storage.
+    Responsive Images.
+    Web Workers.
+    Drag and Drop API. 

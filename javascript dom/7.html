@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Filter</title>
+    <style>
+        .listItem{
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+        }
+        .listItem.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Search for items" id="inputField" oninput="filterList()">
+    <ul id="listItems">
+        <li class="listItem">HTML</li>
+        <li class="listItem">CSS</li>
+        <li class="listItem">Tailwind CSS</li>
+        <li class="listItem">GitHub</li>
+        <li class="listItem">Javascript</li>
+    </ul>
+    <script>
+        function filterList() {
+            let input, ul, li, filter, txtValue, item;
+            input = document.getElementById('inputField');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById('listItems');
+            li = ul.getElementsByTagName('li');
+
+            for (let i = 0; i < li.length; i++) {
+                item = li[i];
+                txtValue = item.innerText || item.textContent;
+                if (filter === '' || txtValue.toUpperCase().indexOf(filter) > -1) {
+                    item.classList.add('show');
+                } else {
+                    item.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

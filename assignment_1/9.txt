@@ -1,0 +1,4 @@
+Self closing are the kind of tags that does does not a separate closig tag to close like other tag as </tag>. Some examples of this type of tgas are <br/>,<hr/>,<img/>
+
+meta tags:
+   Meta tags are snippets of text that describe a page's content; the meta tags don't appear on the page itself, but only in the page's source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.

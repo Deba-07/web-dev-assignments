@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and color</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        #timeContainer{
+            font-size: 3em;
+            color: white;
+            border: 2px solid #000;
+            border-radius: 4px;
+            background-color: #1a1023;
+        }
+    </style>
+</head>
+<body>
+    <div id="timeContainer"></div>
+    <script>
+        function updateClock(){
+            let now = new Date();
+            let hours = now.getHours().toString().padStart(2, '0');
+            let minutes = now.getMinutes().toString().padStart(2, '0');
+            let seconds = now.getSeconds().toString().padStart(2, '0');
+            let hexCode = '#' + hours + minutes + seconds;
+            document.body.style.background = hexCode;
+            document.getElementById('timeContainer').innerText = `${hours}:${minutes}:${seconds}`;
+            setTimeout(updateClock, 1000);
+        }
+        updateClock();
+    </script>
+</body>
+</html>

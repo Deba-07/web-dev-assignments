@@ -1,0 +1,19 @@
+HTMl tags are the keywords that defines how our web page must be format and display our web page.
+    
+    For example <html>, <h1>, <body>, <header> are the tags.
+
+Tags are mainly of two types these are opening tag and closing tag.For example <html> is a opening tag and </html> is a closing tag.
+
+HTML elements are define as opening tag, some content and closing tag.
+
+for example,
+<h1> This is a heading </h1>
+<p>This is a paragraph</p>
+<br> this is an element know as self closing element. Used for line break.
+
+A HTML attribute is a markup language that used to adjust the behaviour or display of an HTML element. For example attributes can be used to change the color, size or functionality of HTML elements.
+
+examples:-
+      The href attribute of <a> specifies the URL of the page the link goes to.
+      he src attribute of <img> specifies the path to the image to be displayed.
+      The width and height attributes of <img> provide size information for images.

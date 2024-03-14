@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        .material-symbols-outlined{
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+            color: #fff;
+        }
+        body{
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        }
+        nav{
+            height: 50px;
+            background-color: #252c2f;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .large-screens{
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            justify-content: space-between;
+            display: none;
+        }
+        .small-screens{
+            width: 100%;
+            margin: 0px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .large-screens > img{
+            width: 50px;
+        }
+        .small-screens > img{
+            width: 30px;
+        }
+        .nav-links{
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a{
+            margin-right: 25px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .nav-links a:hover{
+            color: #76b5d3;
+            scale: 1.1;
+        }
+        .large-screens button{
+            padding: 0px 40px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            border: 0;
+            background-color: #0072e1;
+            color: #fff;
+            font-weight: bold;
+        }
+        .large-screens button:hover{
+            scale: 1.1;
+            cursor: pointer;
+        }
+        @media screen and (min-width: 800px) {
+            .large-screens{
+                display: flex;
+            }
+            .small-screens{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section class="large-screens">
+          <img
+            src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+            alt="Logo"
+          />
+          <div class="nav-links">
+            <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a
+            ><a href="#">Contact</a>
+          </div>
+          <button>Login</button>
+        </section>
+  
+        <section class="small-screens">
+          <img
+            src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+            alt="Logo"
+          />
+  
+          <div>
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+        </section>
+      </nav>
+</body>
+</html>

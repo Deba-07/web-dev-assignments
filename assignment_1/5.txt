@@ -1,0 +1,4 @@
+Emmet is a toolkit that helps developers to write dowm large block of HTML code in just few lines using emmet shortcuts.
+
+Advatages of Emmet:
+     The main benift of using emmet with HTML  is increased productivity and faster coding. Emmet's short hand notation allows developers to write code quickly and efficiently and the plugin's expanding capabilities ensure that the code is valid and properly formatted. 

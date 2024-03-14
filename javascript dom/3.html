@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>counter</h1>
+    <button id="minus">-</button>
+    <h1 id="num">0</h1>
+    <button id="plus">+</button>
+    <script>
+        const plus = document.getElementById('plus')
+        plus.addEventListener('click', increment)
+        function increment(){
+            const num = document.getElementById('num')
+            num.innerText = Number(num.innerText) + 1
+        }
+        const minus = document.getElementById('minus')
+        minus.addEventListener('click', decrement)
+        function decrement(){
+            const num = document.getElementById('num')
+            if(num.innerText === '0'){
+                alert('counter is going beyond 0')
+            }
+            else{
+                num.innerText = Number(num.innerText) - 1
+            }
+        }
+    </script>
+</body>
+</html>

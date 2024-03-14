@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Profile Picture</title>
+  </head>
+  <body>
+    <h1>Upload Profile Picture</h1>
+    <input id="file-picker" type="file" />
+    <div id="image-preview-container">
+      <h3>Your Profile Picture Preview</h3>
+      <img id="image-preview" src="" alt="No Profile Picture" />
+    </div>
+
+    <script>
+      const filePicker = document.getElementById("file-picker");
+      const imagePreview = document.getElementById("image-preview");
+      const imagePreviewContainer = document.getElementById("image-preview-container");
+
+      filePicker.addEventListener("change", function () {
+        const file = filePicker.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            imagePreview.src = e.target.result;
+            imagePreviewContainer.style.display = "block"; // Display the image preview container
+            imagePreview.style.height = '400px'
+          };
+
+          reader.readAsDataURL(file);
+        } else {
+          // If no file is selected, hide the image preview container
+          imagePreview.src = "";
+          imagePreviewContainer.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

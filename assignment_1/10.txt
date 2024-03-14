@@ -1,0 +1,8 @@
+Global attributes are the attributs that can be used with all HTML elements.
+ 
+ Examples:
+    1. Class.
+    2. id.
+    3. title.
+    4. style.
+    5. tabIndex.
