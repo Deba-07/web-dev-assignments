@@ -1,0 +1,31 @@
+ file-based storage system is a method of storing data in a hierarchical structure of directories (or folders) and files. Each file in the system is a collection of data, such as text documents, images, or videos, stored on a physical or virtual storage medium like a hard drive or cloud storage. Users and applications access files through a file system interface, typically provided by an operating system.
+
+Major Challenges of a File-Based Storage System
+Data Redundancy and Inconsistency:
+
+Redundancy: The same piece of data might be stored in multiple files, leading to unnecessary duplication.
+Inconsistency: If one instance of the data is updated, others might remain outdated, leading to inconsistencies.
+Limited Scalability:
+
+As the volume of data grows, managing files and directories becomes increasingly complex.
+Performance can degrade with a large number of files due to the limitations of the file system structure.
+Difficulty in Data Retrieval:
+
+Searching for specific information can be inefficient, especially if the data is scattered across many files.
+There is no efficient querying mechanism to retrieve data based on specific criteria, unlike databases which support powerful query languages like SQL.
+Lack of Concurrent Access Handling:
+
+File-based systems struggle with handling simultaneous access by multiple users.
+There is a risk of data corruption if multiple users try to modify the same file simultaneously without proper locking mechanisms.
+Poor Data Integrity:
+
+Ensuring data integrity and enforcing constraints is difficult.
+Unlike databases, file-based systems do not have built-in mechanisms to enforce data validation and relationships between data items.
+Security Issues:
+
+File-based systems offer basic security mechanisms, such as file permissions, which may not be sufficient for complex security requirements.
+Fine-grained access control and auditing features are generally less robust compared to database systems.
+Backup and Recovery:
+
+Backing up files and ensuring consistent recovery can be challenging.
+Unlike database systems that often come with automated backup and recovery tools, file-based systems require more manual intervention.
