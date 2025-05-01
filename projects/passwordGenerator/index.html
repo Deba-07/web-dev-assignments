@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md w-80">
+    <h1 class="text-center text-xl font-bold mb-4">Password Generator</h1>
+    <input
+      id="password"
+      type="text"
+      placeholder="click on Generate button"
+      class="w-full px-3 py-2 text-gray-900 rounded mb-4"
+      readonly
+    />
+    <div class="flex justify-between mb-4">
+      <button
+        id="generateBtn"
+        class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded"
+      >
+        Generate
+      </button>
+      <button
+        id="copyBtn"
+        class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded"
+      >
+        Copy To Clipboard
+      </button>
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm">Password Length</label>
+      <input
+        id="length"
+        type="number"
+        min="6"
+        max="20"
+        value="12"
+        class="w-full px-3 py-2 text-gray-900 rounded"
+      />
+    </div>
+    <div class="flex items-center mb-2">
+      <input id="uppercase" type="checkbox" class="mr-2" checked />
+      <label class="text-sm">Include uppercase letters</label>
+    </div>
+    <div class="flex items-center mb-2">
+      <input id="lowercase" type="checkbox" class="mr-2" checked />
+      <label class="text-sm">Include lowercase letters</label>
+    </div>
+    <div class="flex items-center mb-2">
+      <input id="numbers" type="checkbox" class="mr-2" checked />
+      <label class="text-sm">Include numbers</label>
+    </div>
+    <div class="flex items-center">
+      <input id="symbols" type="checkbox" class="mr-2" checked />
+      <label class="text-sm">Include symbols</label>
+    </div>
+  </div>
+  <script src="/projects/passwordGenerator/index.js"></script>
+</body>
+</html>
